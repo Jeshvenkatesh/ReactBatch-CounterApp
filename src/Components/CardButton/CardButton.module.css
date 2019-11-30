@@ -1,0 +1,24 @@
+.CardButtonWrapper {
+    box-sizing: border-box;
+}
+
+.CardButtonWrapper > button {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 32px;
+    opacity: 0.8;
+
+    margin: 32px 0;
+    padding: 32px;
+    border-radius: 12px;
+    transition: 0.3s;
+    box-shadow: 2px 2px 4px #ccc;
+    outline: none;
+}
+
+.CardButtonWrapper > button:hover {
+    opacity: 1;
+    box-shadow: 4px 4px 4px #ccc;
+}

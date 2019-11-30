@@ -1,0 +1,11 @@
+.App {
+  display: flex;
+}
+
+.App > div:first-of-type {
+  width: 60%;
+}
+
+.App > div:last-of-type {
+  width: 40%;
+}
