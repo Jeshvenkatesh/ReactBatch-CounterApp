@@ -4,7 +4,7 @@ import classes from './CardButton.module.css'
 const CardButton = (props) => {
     return (
         <div className={classes.CardButtonWrapper}>
-            <button onClick={null} style={{backgroundColor: props.bgColor}}>{props.label}</button>
+            <button onClick={props.btnClick} style={{backgroundColor: props.bgColor}}>{props.label}</button>
         </div>
     )
 }

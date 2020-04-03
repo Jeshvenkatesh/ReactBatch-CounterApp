@@ -1,12 +1,21 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import classes from './Sidebar.module.css';
 
-const Sidebar = () => {
+const Sidebar = (props) => {
     return(
         <div className={classes.Sidebar}>
-            <h1>Total Count: <br></br><span>0</span></h1>
+            <h1>Total Count: <br></br><span>{props.updatedVal}</span></h1>
         </div>
     );
 }
 
-export default Sidebar;
+const getValsfromGlobalStore = (globalstore)=>{
+
+    return{
+         updatedVal : globalstore.totlikes
+    }
+
+}
+
+export default connect(getValsfromGlobalStore)(Sidebar) ;
