@@ -7,7 +7,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 const initialState={
-    totlikes:500
+    totlikes:100
 }
 
 const mainReducer = (prevState = initialState, action)=>{
